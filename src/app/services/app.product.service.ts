@@ -14,7 +14,7 @@ export class HttpService {
   // to use get<T>/post<T>/put<T>/delete<T> methods
   // T is the Observable Reasponse received from Http Request
   constructor(private http: HttpClient) {
-    this.url = 'https://apiapptrainingnewapp.azurewebsites.net/api/Products';
+    this.url = '<THE REST API URL>';
   }
 
   getData(): Observable<Product[]> {
