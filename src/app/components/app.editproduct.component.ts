@@ -20,9 +20,6 @@ export class ProductEditFormComponent implements OnInit {
   manufacturers = Manufacturers;
   id: number;
   product$: Observable<Product>;
-
-
-
   // tslint:disable-next-line: variable-name
   constructor(private _store: Store<IAppProductState>,
     private router: Router,

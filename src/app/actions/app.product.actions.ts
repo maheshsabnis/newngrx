@@ -7,9 +7,10 @@ import { Product } from '../models/app.product.model';
 export const getProducts =  createAction(
   '[Product] Get Product'
 );
+// success action
 export const getProductsSuccess =  createAction(
-  '[Product] Get Product Success',
-   props<{products: Product[]}>()
+  '[Product] Get Product Success', // acction type
+   props<{products: Product[]}>() // payload (input and/or output parameter )
 );
 export const getProductById = createAction(
   '[Product]Get Product By Id',

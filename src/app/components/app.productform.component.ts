@@ -14,8 +14,6 @@ import { Router } from '@angular/router';
 export class ProductFormComponent implements OnInit {
 
   product: Product;
-
-
   columnHeaders: Array<string>;
   // read the constants and store their data in local public objects
   categories = Categories;

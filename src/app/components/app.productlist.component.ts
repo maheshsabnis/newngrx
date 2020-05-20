@@ -13,9 +13,9 @@ import { Router } from '@angular/router';
 export class ProductListComponent implements OnInit {
   columnHeaders: Array<string>;
   product: Product;
-
+  // subscription for the Selector Observable
   products$ =  this._store.pipe(select(selectProductsList));
-
+ // provide the store to the Component using ctor injection
   constructor(private _store: Store<IAppProductState>, private router: Router) {
     this.product = new Product(0,'','','','','',0);
     this.columnHeaders = new Array<string>();
